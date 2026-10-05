@@ -491,7 +491,7 @@ async def index(request: web.Request):
     return web.FileResponse(path)
 
 
-async def start_web_dashboard(host="0.0.0.0", port=11006):
+async def start_web_dashboard(host="0.0.0.0", port=8080):
     app = web.Application()
     app.router.add_post("/api/login",          api_login)
     app.router.add_post("/api/logout",         api_logout)
