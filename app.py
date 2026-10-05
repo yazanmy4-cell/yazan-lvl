@@ -55,7 +55,7 @@ except Exception:
 
 from dashboard import bot_state, start_web_dashboard
 
-WEB_PORT = int(os.getenv("WEB_PORT", os.getenv("PORT", "11006")))
+WEB_PORT = int(os.getenv("WEB_PORT", os.getenv("PORT", "8080")))
 START_MATCH_INTERVAL = 3.0
 NEW_MATCH_DELAY = 3.0
 MAX_MATCH_DURATION = 800
